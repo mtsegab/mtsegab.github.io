@@ -1,0 +1,203 @@
+<html>
+<head>
+    <title> Registration HTML page</title>
+    <style>
+        header{
+            width:100%;
+            height:5%;
+            background-color: rgb(155, 192, 180);
+        }
+
+        .moreAcionbackgroundColor{
+            background-color: rgb(155, 192, 180);
+        }
+
+        .undeline{
+            text-decoration: underline;
+        }
+
+        section{
+            width:100%;
+            height:90%;
+            background-color: white;
+        }
+        footer{
+            width:100%;
+            height:5%;
+            background-color: gray;
+        }
+        #footer_buttons{
+            margin: auto;
+            text-align: center;
+            width: 15%;
+        }
+        h2{
+            display: inline;
+            margin: 20px;
+        }
+        #leftForms{
+            width:50%;
+            height: 90%;
+            float:left;
+        }
+        #rightForms{
+            width:50%;
+            height: 100%;
+            float:right;
+        }
+        .listContainer{
+            width:30%; 
+            display: inline;
+            float: left;
+        }
+        .listMargin{
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2> Workshop Registration</h2>
+        <select name="actionList" class="moreAcionbackgroundColor" style="border: none;">
+            <option> More Actions </option>
+        </select>
+    </header>
+    <section>
+        <p class="underline">Register now while seats are available!</p>
+        <form> 
+            <div id="leftForms">
+                <div class = "listMargin">
+                    <div class="listContainer">
+                        <label>FirstName</label>
+                        <span class="required">*</span>
+                    </div>
+                    <input type="input" name="FirstName"> 
+                </div>
+
+                <div class = "listMargin">
+                    <div class="listContainer">
+                        <label>LastName</label>
+                        <span class="required">*</span>
+                    </div>
+                    <input type="input" name="LastName"> 
+               </div>
+
+               <div class = "listMargin">
+                   <div class="listContainer">
+                        <label>Company/Institution</label>
+                        <span class="required">*</span>
+                    </div>
+                    <input type="input" name="FirstName"> 
+               </div>
+
+               <div class = "listMargin">
+                   <div class= "listContainer">
+                        <label> Address</label>
+                        <span class="required">*</span>
+                    </div>
+                    <input type="text" name="FirstName"> 
+               </div>
+
+               <div class = "listMargin">
+                   <div class = "listContainer">
+                    <label> City</label>
+                    </div>
+                    <input type="text" name="FirstName"> 
+               </div>
+
+               <div class = "listMargin">
+                   <div class = "listContainer">
+                        <label> State/Province/Region</label>
+                    </div>
+                    <select name="state">
+                      <option> -Select-</option>
+                    </select> 
+              </div>
+
+              <div class = "listMargin">
+                <div class= "listContainer">
+                    <label> Country</label>
+                </div>
+                <select name="country">
+                    <option> -Select-</option>
+                </select> 
+             </div>
+
+             <div class = "listMargin">
+                <div class = "listContainer">
+                    <label>Email</label>
+                    <span class="required">*</span>
+                </div>
+                <input type="input" name="email"> 
+            </div>
+
+            <div class = "listMargin">
+                <div class = "listContainer">
+                    <label>Phone Number</label>
+                    <span class="required">*</span>
+                </div>
+                <input type="input" name="phoneNumber"> 
+            </div>
+
+            </div>
+
+            <div id="rightForms">
+                <p class="undeline"> Lunch</p>
+
+                <div class = "listMargin">
+                    <div class = "listContainer">
+                        <label> Meal Preference</label>
+                    </div>
+                    <select name="meal">
+                        <option selected> Vegeterian</option>
+                        <option> Meat</option>
+                    </select> 
+                </div>
+
+                 <p class="underline listMargin" > Payment Details</p>
+
+                <div class = "listMargin">
+                    <div class = "listContainer">
+                        <label> Payment Mode</label>
+                    </div>
+                    <input type="checkbox" name="cash">  Cash 
+                    <input type="checkbox" name="Cheque"> Cheque
+                    <input type="checkbox" name="DemandDraft"> Demand Draft
+                </div>
+
+                <div class = "listMargin">
+                    <div class = "listContainer">
+                        <label> DD/Cheque No.</label>
+                    </div>
+                    <input type="text" name="dd"> 
+                </div>
+
+                <div class = "listMargin">
+                    <div class = "listContainer">
+                        <label> Drawn on(Bank Name)</label>
+                    </div>
+                    <input type="text" name="DrawnOn"> 
+                </div>
+
+                <div class = "listMargin">
+                    <div class = "listContainer">
+                        <label> Payable At</label>
+                    </div>
+                    <input type="text" name="payableAt"> 
+                </div>
+
+            </div>
+        
+    </section>
+
+    <footer>
+        <div id="footer_buttons">
+            <input type="submit"/>
+            <input type="reset" value="Reset"/>    </form>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
